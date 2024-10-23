@@ -1,64 +1,114 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="ourstylesheet.css">
-    <link rel="icon" type="image/x-icon" href="wombat-icon-web.ico">
 
-    <title>WOMBAT: Workshop organised by Monash Business Analytics Team</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="ourstylesheet.css">
+  <link rel="icon" type="image/x-icon" href="wombat-icon-web.ico">
+
+  <title>WOMBAT: Workshop organised by Monash Business Analytics Team</title>
 </head>
 
 
 <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-        <img src="wombat-icon-web.png" align="right" width="300">
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <img src="wombat-icon-web.png" align="right" width="300">
 
-          <h1 id="project_title"> Open the World with Open Source</h1>
-          <h2 id="project_tagline" > <a href="https://numbats.github.io/WOMBAT2024/" > Workshop Organised by the Monash Business Analytics Team (WOMBAT) </a> </h2>
+      <h1 id="project_title"> Open the World with Open Source</h1>
+      <h2 id="project_tagline"> <a href="https://numbats.github.io/WOMBAT2024/"> Workshop Organised by the Monash Business Analytics Team (WOMBAT) </a> </h2>
+    </header>
+  </div>
 
-        </header>
-    </div>
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      <hr>
 
-<hr>
+      <h2> Environment </h2>
 
-<h2> Environment </h2>
+      <strong>Chair:</strong> Kate Saunders
+      <br><br>
+      This session runs from 10:30-12:00 and focuses on tools for working with environmental data. Speakers are:
+      <br><br>
 
-<strong>Chair:</strong> Kate Saunders
-<br><br>
-This session runs from 10:30-12:00 and focuses on tools for working with environmental data. Speakers are:
-<br><br>
+      <ul>
+        <li> <strong>Climate is What We Expect, Weather (Data) is What We Get Via APIs </strong> <br> <em> Adam Sparks,
+            Curtin University </em>
+          <p> No matter where we are, weather shapes our lives. We are all familiar with ordinary everyday weather
+            concerns, do I need an umbrella when I step out the door today or maybe how cold will it be, will I need to
+            wear a jacket later? Businesses use it to track long-term patterns and understand historical trends. Major
+            media organisations use historical weather data to tell stories by visualising the data to show the effects
+            of climate change to the public. Agricultural researchers use weather data in their analyses to help explain
+            experimental results or build complex models that simulate farming systems. And governments use the data to
+            prepare and plan for future disasters or understand seasonal trends to ensure adequate infrastructure is in
+            place. While the uses are often critical, and the data may be freely or openly available, getting the data
+            quickly and easily into R can be frustrating. There are 193 members of the World Meteorological Organisation
+            (WMO), many of which offer some sort of programmatic access to historical weather data or forecasted weather
+            data via APIs, but some do not, while there are other non-member organisations that do. I'll present the
+            good, the bad and the ugly of different weather data sources and getting the data wrangled and tamed ready
+            to go in your R session with what you need to think about for end users of the data when you make a weather
+            data API client R package to help make our world more understandable.
+          </p>
+          <ul>
+            <li>
+              <a href="https://coloradosun.com/2024/09/08/patrich-esch-ed-dean-jagers-ranchers-fraud-insurance/">Story from opening slide: “Wrecked rain gauges.  Whistleblowers. Million-dollar payouts and manhunts. Then a Colorado crop fraud got really crazy”</a>
+            </li>
+            <li>
+              <a href="https://adamhsparks.codeberg.page/WOMBAT2024/@main/WOMBAT2024.html#/title-slide">Rendered slides</a>
+            </li>
+            <li>
+              <a href="https://codeberg.org/adamhsparks/WOMBAT2024/src/tag/WOMBAT">Slide repository</a>
+            </li>
+            <li>
+              <a href="https://doi.org/10.5281/zenodo.13974911">DOI of slides on Zenodo</a>
+            </li>
+          </ul>
 
-<ul>
-   <li> <strong>Climate is What We Expect, Weather (Data) is What We Get Via APIs  </strong> <br> <em> Adam Sparks, Curtin University </em> 
-<p> No matter where we are, weather shapes our lives. We are all familiar with ordinary everyday weather concerns, do I need an umbrella when I step out the door today or maybe how cold will it be, will I need to wear a jacket later? Businesses use it to track long-term patterns and understand historical trends. Major media organisations use historical weather data to tell stories by visualising the data to show the effects of climate change to the public. Agricultural researchers use weather data in their analyses to help explain experimental results or build complex models that simulate farming systems. And governments use the data to prepare and plan for future disasters or understand seasonal trends to ensure adequate infrastructure is in place. While the uses are often critical, and the data may be freely or openly available, getting the data quickly and easily into R can be frustrating. There are 193 members of the World Meteorological Organisation (WMO), many of which offer some sort of programmatic access to historical weather data or forecasted weather data via APIs, but some do not, while there are other non-member organisations that do. I'll present the good, the bad and the ugly of different weather data sources and getting the data wrangled and tamed ready to go in your R session with what you need to think about for end users of the data when you make a weather data API client R package to help make our world more understandable. </p> </li>
-   <li> <strong> Read, Manipulate and Plot Gridded Data with metR </strong> <br><em> Elio Campitelli, Monash University </em> 
-<p> The metR package provides an assortment of tools for wrangling, plotting and analysing meteorological field data. It has been developed from my own research needs, originally in response to a lack of available tools. For example, a large number of functions are provided for plotting variations of filled contours, which preceded the ggplot2 filled contour functions. Because meteorological field data is delivered in NetCDF there is a function to read this type of file. Utility functions allow conversion between different different longitude conventions.  Principal components is a primary analysis tool, so there are functions for this, along with various model fitting procedures. There are tools for imputation, finding anomalies and for model diagnostics. Writing a package tailored to what you, individually need, can be useful for others: philosophically, if I need it, probably others do too! </p> 
-</li>
-   <li> <strong> Open Air Quality directly in R with airpurifyr </strong> <br> <em>  Michael Lydeamore, David Wu, Jayani Lakshika </em> 
-<p> Air quality and pollution have emerged as critical research areas with implications across various policy domains, extending beyond traditional climate-focused studies. Despite this growing interest, many projects still rely on limited, ad-hoc datasets. I will introduce airpurifyr, a new R package designed to facilitate access to the OpenAQ Web API, a freely available and semi-curated global database of air quality measurements.
-<p> In addition to providing an overview of the airpurifyr package, I will showcase research conducted by our master's students, who have leveraged the OpenAQ API to enhance their data exploration skills and contribute to the field of air quality analysis.
-<p> By streamlining access to comprehensive air quality data, airpurifyr aims to empower researchers, policymakers, and students alike, fostering more robust analysis and evidence-based decision-making in the ongoing pursuit of cleaner, healthier air worldwide. </p>
-</li>
-</ul>
-<br><br>
+        </li>
+        <li> <strong> Read, Manipulate and Plot Gridded Data with metR </strong> <br><em> Elio Campitelli, Monash
+            University </em>
+          <p> The metR package provides an assortment of tools for wrangling, plotting and analysing meteorological
+            field data. It has been developed from my own research needs, originally in response to a lack of available
+            tools. For example, a large number of functions are provided for plotting variations of filled contours,
+            which preceded the ggplot2 filled contour functions. Because meteorological field data is delivered in
+            NetCDF there is a function to read this type of file. Utility functions allow conversion between different
+            different longitude conventions. Principal components is a primary analysis tool, so there are functions for
+            this, along with various model fitting procedures. There are tools for imputation, finding anomalies and for
+            model diagnostics. Writing a package tailored to what you, individually need, can be useful for others:
+            philosophically, if I need it, probably others do too! </p>
+        </li>
+        <li> <strong> Open Air Quality directly in R with airpurifyr </strong> <br> <em> Michael Lydeamore, David Wu,
+            Jayani Lakshika </em>
+          <p> Air quality and pollution have emerged as critical research areas with implications across various policy
+            domains, extending beyond traditional climate-focused studies. Despite this growing interest, many projects
+            still rely on limited, ad-hoc datasets. I will introduce airpurifyr, a new R package designed to facilitate
+            access to the OpenAQ Web API, a freely available and semi-curated global database of air quality
+            measurements.
+          <p> In addition to providing an overview of the airpurifyr package, I will showcase research conducted by our
+            master's students, who have leveraged the OpenAQ API to enhance their data exploration skills and contribute
+            to the field of air quality analysis.
+          <p> By streamlining access to comprehensive air quality data, airpurifyr aims to empower researchers,
+            policymakers, and students alike, fostering more robust analysis and evidence-based decision-making in the
+            ongoing pursuit of cleaner, healthier air worldwide. </p>
+        </li>
+      </ul>
+      <br><br>
 
-      </section>
-    </div>
+    </section>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        Copyright ©2015-2024 Monash University</p>
-      </footer>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      Copyright ©2015-2024 Monash University</p>
+    </footer>
+  </div>
 
-  </body>
+</body>
+
 </html>
