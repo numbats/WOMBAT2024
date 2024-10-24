@@ -1,69 +1,112 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="ourstylesheet.css">
-    <link rel="icon" type="image/x-icon" href="wombat-icon-web.ico">
 
-    <title>WOMBAT: Workshop organised by Monash Business Analytics Team</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="ourstylesheet.css">
+  <link rel="icon" type="image/x-icon" href="wombat-icon-web.ico">
+
+  <title>WOMBAT: Workshop organised by Monash Business Analytics Team</title>
 </head>
 
 
 <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-        <img src="wombat-icon-web.png" align="right" width="300">
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      <img src="wombat-icon-web.png" align="right" width="300">
 
-          <h1 id="project_title"> Open the World with Open Source</h1>
-          <h2 id="project_tagline" > <a href="https://numbats.github.io/WOMBAT2024/" > Workshop Organised by the Monash Business Analytics Team (WOMBAT) </a> </h2>
+      <h1 id="project_title"> Open the World with Open Source</h1>
+      <h2 id="project_tagline"> <a href="https://numbats.github.io/WOMBAT2024/"> Workshop Organised by the Monash
+          Business Analytics Team (WOMBAT) </a> </h2>
 
-        </header>
-    </div>
+    </header>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
 
-<hr>
+      <hr>
 
-<h2> Education </h2>
+      <h2> Education </h2>
 
-<strong>Chair:</strong> Damjan Vukcevic
-<br><br>
-This session runs from 1:00-2:30 and focuses on tools for education.  Speakers are:
-<br><br>
+      <strong>Chair:</strong> Damjan Vukcevic
+      <br><br>
+      This session runs from 1:00-2:30 and focuses on tools for education. Speakers are:
+      <br><br>
 
-<ul>
-   <li> <strong>Scalable self-paced e-learning of statistical programming with fine-grained feedback and assessment  </strong> <br> <em> Mitchell O'Hara-Wild and Cynthia Huang, Monash University </em> 
-<p> Assessing statistical programming skills consistently and at scale is challenging. Much like writing style is assessed in essay tasks, discriminating code quality and style from code function or output is becoming increasingly important as students adopt code-generating tools such as LLMs. In many cases checking code output alone is insufficient to assess students’ understanding and ability to write statistical code. Instead, instructors often need to check the code itself for evidence of computational thinking, such as the use of appropriate functions, data structures, and comments. Unfortunately, manual review of code is time-consuming and subjective, and the skills needed to automate this process are complex to learn and use. In this talk, we introduce a new approach to authoring self-paced interactive modules for learning statistics with R. It is built using Quarto and WebR, leveraging literate programming to quickly create exercises and automate assessments. We discuss how this format can be used to write assessments with automated checking of multi-choice quizzes, code input and outputs, and the advantages of in-browser execution via WebR compared to existing server based solutions.  </p>
-<ul>
-  <li>Slides: <a href="https://slides.mitchelloharawild.com/wombat2024/">https://slides.mitchelloharawild.com/wombat2024/</a></li>
-  <li>Source code: <a href="https://github.com/mitchelloharawild/talk-elearning-wombat24">https://github.com/mitchelloharawild/talk-elearning-wombat24</a></li>
-  <li>Video recording: <a href="https://youtu.be/Y9p6XwAI5Zw">https://youtu.be/Y9p6XwAI5Zw</a></li>
-</ul>
-</li>
-   <li> <strong> Developing tools for “real time” formative assessment of writing within large introductory statistics and data science courses </strong> <br><em> Anna Fergusson, University of Auckland </em> 
-<p> Various data technologies and automated approaches can assist with teaching and assessment, but care is needed to develop tools and practices that value and support the human learning experience, at the same time as optimising for efficiency and accuracy. For instance, introductory-level statistics and data science students need to learn how to identify and produce short written communications (including code) that are statistically and computationally sound. However, there are challenges to designing and implementing effective formative assessment of student writing and coding when courses involve hundreds or thousands of students, and scalable methods of support are needed. This talk will present pedagogical and technological explorations for developing tools that support “real time” and large-scale formative assessment of writing (including code), as well as plans for further research involving the integration of statistical pairwise-comparison ranking models and NLP algorithms.
- </p> 
-</li>
-   <li> <strong> Creating custom quarto templates </strong> <br> <em>  Rob Hyndman, Monash University </em> 
-<p> I will describe several quarto templates we have made for use at Monash University to create presentations, working papers, theses, exams, slides, reports, memos, and letters. These help make our outputs look professional and consistent. They are relatively easy to make if you know a little LaTeX (for pdf output) or CSS (for html output). More advanced customization is possible with the help of Lua. I will show how you can easily adapt our quarto templates to other organizations, and how to make your own templates from scratch. </p>
-</li>
-</ul>
-<br><br>
+      <ul>
+        <li> <strong>Scalable self-paced e-learning of statistical programming with fine-grained feedback and assessment
+          </strong> <br> <em> Mitchell O'Hara-Wild and Cynthia Huang, Monash University </em>
+          <p> Assessing statistical programming skills consistently and at scale is challenging. Much like writing style
+            is assessed in essay tasks, discriminating code quality and style from code function or output is becoming
+            increasingly important as students adopt code-generating tools such as LLMs. In many cases checking code
+            output alone is insufficient to assess students’ understanding and ability to write statistical code.
+            Instead, instructors often need to check the code itself for evidence of computational thinking, such as the
+            use of appropriate functions, data structures, and comments. Unfortunately, manual review of code is
+            time-consuming and subjective, and the skills needed to automate this process are complex to learn and use.
+            In this talk, we introduce a new approach to authoring self-paced interactive modules for learning
+            statistics with R. It is built using Quarto and WebR, leveraging literate programming to quickly create
+            exercises and automate assessments. We discuss how this format can be used to write assessments with
+            automated checking of multi-choice quizzes, code input and outputs, and the advantages of in-browser
+            execution via WebR compared to existing server based solutions. </p>
+          <ul>
+            <li>Slides: <a
+                href="https://slides.mitchelloharawild.com/wombat2024/">https://slides.mitchelloharawild.com/wombat2024/</a>
+            </li>
+            <li>Source code: <a
+                href="https://github.com/mitchelloharawild/talk-elearning-wombat24">https://github.com/mitchelloharawild/talk-elearning-wombat24</a>
+            </li>
+            <li>Video recording: <a href="https://youtu.be/Y9p6XwAI5Zw">https://youtu.be/Y9p6XwAI5Zw</a></li>
+          </ul>
+        </li>
+        <li> <strong> Developing tools for “real time” formative assessment of writing within large introductory
+            statistics and data science courses </strong> <br><em> Anna Fergusson, University of Auckland </em>
+          <p> Various data technologies and automated approaches can assist with teaching and assessment, but care is
+            needed to develop tools and practices that value and support the human learning experience, at the same time
+            as optimising for efficiency and accuracy. For instance, introductory-level statistics and data science
+            students need to learn how to identify and produce short written communications (including code) that are
+            statistically and computationally sound. However, there are challenges to designing and implementing
+            effective formative assessment of student writing and coding when courses involve hundreds or thousands of
+            students, and scalable methods of support are needed. This talk will present pedagogical and technological
+            explorations for developing tools that support “real time” and large-scale formative assessment of writing
+            (including code), as well as plans for further research involving the integration of statistical
+            pairwise-comparison ranking models and NLP algorithms.
+          <ul>
+            <li><a
+                href="Developing tools for “real time” formative assessment of writing within large introductory statistics and data science courses.pdf">Slides</a>
+            </li>
+          </ul>
+          </p>
+        </li>
+        <li> <strong> Creating custom quarto templates </strong> <br> <em> Rob Hyndman, Monash University </em>
+          <p> I will describe several quarto templates we have made for use at Monash University to create
+            presentations, working papers, theses, exams, slides, reports, memos, and letters. These help make our
+            outputs look professional and consistent. They are relatively easy to make if you know a little LaTeX (for
+            pdf output) or CSS (for html output). More advanced customization is possible with the help of Lua. I will
+            show how you can easily adapt our quarto templates to other organizations, and how to make your own
+            templates from scratch. </p>
+            <ul>
+              <li><a href="https://robjhyndman.com/seminars/quarto_templates.html">Slides</a></li>
+              <li><a href="https://github.com/quarto-monash">Templates</a></li>
+            </ul>
+        </li>
+      </ul>
+      <br><br>
 
-      </section>
-    </div>
+    </section>
+  </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        Copyright ©2015-2024 Monash University</p>
-      </footer>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      Copyright ©2015-2024 Monash University</p>
+    </footer>
+  </div>
 
-  </body>
+</body>
+
 </html>
